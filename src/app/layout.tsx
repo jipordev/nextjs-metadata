@@ -1,12 +1,34 @@
 // 'use client'
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Kantumruy_Pro, Konkhmer_Sleokchher, Poppins } from "next/font/google";
 import "./globals.css";
 import NextUILayout from "./NextUIProvider";
 import NavbarComponent from "@/components/layouts/NavbarComponent";
 import { Suspense } from "react";
 import LoadingComponent from "./loading";
+
 const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
+  style: ["italic", "normal"],
+  variable: "--font-poppins",
+});
+
+const kantumruy_pro = Kantumruy_Pro({
+  subsets: ["khmer"],
+  display: "swap",
+  variable: "--font-kantumruy-pro",
+});
+
+const konkhmer_sleokchher = Konkhmer_Sleokchher({
+  subsets: ["khmer"],
+  display: "swap",
+  style: "normal",
+  variable: "--font-konkhmer-sleokchher",
+  weight: "400"
+})
 
 export const metadata: Metadata = {
   icons: {
@@ -37,7 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${poppins.className} ${kantumruy_pro.className} ${konkhmer_sleokchher}`}>
         <NextUILayout>
           <NavbarComponent />
             <Suspense fallback={<LoadingComponent/>}>

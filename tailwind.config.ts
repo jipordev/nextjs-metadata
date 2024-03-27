@@ -11,6 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sleokchher: ['var(--font-konkhmer-sleokchher)'],
+        kantumruy: ['var(--font-kantumruy-pro)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
