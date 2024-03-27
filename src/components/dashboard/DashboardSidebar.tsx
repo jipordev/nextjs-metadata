@@ -1,37 +1,23 @@
+'use client'
 
-'use client';
-
-import { Sidebar } from 'flowbite-react';
-import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
+import { Sidebar, SidebarItemGroup } from 'flowbite-react';
+import SidebarMenu from './sidebar/sidebarMenu';
+import { Metadata } from 'next';
 
 export default function DashboardSidebar() {
+  const sidebar = SidebarMenu;
+
   return (
     <Sidebar className='min-h-screen' aria-label="Default sidebar example">
-      <Sidebar.Items>
-        <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiChartPie}>
-            Dashboard
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiViewBoards} label="Pro" labelColor="dark">
-            Kanban
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiInbox} label="3">
-            Inbox
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiUser}>
-            Users
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiShoppingBag}>
-            Products
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiArrowSmRight}>
-            Sign In
-          </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiTable}>
-            Sign Up
-          </Sidebar.Item>
-        </Sidebar.ItemGroup>
-      </Sidebar.Items>
+         <Sidebar.Items>
+            <SidebarItemGroup>
+            {sidebar.map((item, index) => (
+                <Sidebar.Item key={index} href={item.path} icon={item.icon}>
+                  {item.titile}
+                </Sidebar.Item>
+            ))}  
+            </SidebarItemGroup>
+         </Sidebar.Items>
     </Sidebar>
   );
 }
