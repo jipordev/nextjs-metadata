@@ -1,5 +1,3 @@
-
-import { log } from 'console'
 import React from 'react'
 export type ParamProps = {
     params: {

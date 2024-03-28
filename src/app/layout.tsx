@@ -1,4 +1,4 @@
-
+'use client'
 import type { Metadata } from "next";
 import { Inter, Kantumruy_Pro, Khmer, Konkhmer_Sleokchher, Poppins } from "next/font/google";
 import "./globals.css";
