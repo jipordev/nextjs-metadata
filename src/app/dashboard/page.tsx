@@ -1,3 +1,4 @@
+import UserTable from '@/components/table/UserTable';
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
-      This is dashboard page
+      <UserTable/>
     </div>
   )
 }

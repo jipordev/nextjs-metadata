@@ -2,6 +2,7 @@
 
 import { Sidebar } from "flowbite-react";
 import { sideBarItem } from "./sidebarMenu";
+import UserTable from "@/components/table/UserTable";
 
 export default function DashboardSidebar() {
   return (

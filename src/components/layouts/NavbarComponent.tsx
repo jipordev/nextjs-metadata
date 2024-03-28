@@ -16,7 +16,8 @@ export default function NavbarComponent() {
   const menu = NavbarMenu; // Assuming NavbarMenu is an array
   const pathname = usePathname();
 
-  if (pathname === "/dashboard") return null; // Corrected condition
+  // if (pathname === "/dashboard") return null; 
+  // Corrected condition
 
   return (
     <Navbar className="bg-blue-200">
