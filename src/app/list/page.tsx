@@ -3,7 +3,7 @@
 import { Metadata } from 'next'
 import { useSearchParams } from 'next/navigation'
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   icons: {
     icon: "/assets/pic.jpg",
   },
