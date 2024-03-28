@@ -12,7 +12,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sleokchher: ['var(--font-konkhmer-sleokchher)'],
+        khmerfont: ['var(--font-konkhmer-sleokchher)'],
         kantumruy: ['var(--font-kantumruy-pro)'],
       },
       backgroundImage: {

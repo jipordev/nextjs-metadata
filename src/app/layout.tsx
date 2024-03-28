@@ -1,6 +1,6 @@
 // 'use client'
 import type { Metadata } from "next";
-import { Inter, Kantumruy_Pro, Konkhmer_Sleokchher, Poppins } from "next/font/google";
+import { Inter, Kantumruy_Pro, Khmer, Konkhmer_Sleokchher, Poppins } from "next/font/google";
 import "./globals.css";
 import NextUILayout from "./NextUIProvider";
 import NavbarComponent from "@/components/layouts/NavbarComponent";
@@ -22,11 +22,11 @@ const kantumruy_pro = Kantumruy_Pro({
   variable: "--font-kantumruy-pro",
 });
 
-const konkhmer_sleokchher = Konkhmer_Sleokchher({
+const khmer_font = Khmer({
   subsets: ["khmer"],
   display: "swap",
   style: "normal",
-  variable: "--font-konkhmer-sleokchher",
+  variable: "--font-khmer-font",
   weight: "400"
 })
 
@@ -59,7 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${kantumruy_pro.className} ${konkhmer_sleokchher}`}>
+      <body className={`${poppins.className} ${kantumruy_pro.className}`}>
         <NextUILayout>
           <NavbarComponent />
             <Suspense fallback={<LoadingComponent/>}>
