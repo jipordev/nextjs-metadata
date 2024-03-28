@@ -59,6 +59,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Hello World</title>
+      </head>
       <body className={`${poppins.className} ${kantumruy_pro.className}`}>
         <NextUILayout>
           <NavbarComponent />
