@@ -1,31 +1,20 @@
-import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable } from 'react-icons/hi';
+import path from 'path';
+import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
 
-
-const SidebarMenu = [
+export const sideBarItem = [
     {
-        titile:"Dashborad",
-        path: "#",
-        icon:{HiArrowSmRight}
+        title: "Dashboard",
+        path: "/dasboard",
+        icon: HiArrowSmRight
     },
     {
-        titile:"Kanban",
-        path: "#",
-        icon:{HiChartPie}
+        title: "Account",
+        path: "/dasboard/account",
+        icon: HiChartPie
     },
     {
-        titile:"Users",
-        path: "#",
-        icon:{HiInbox}
-    },
-    {
-        titile:"Sign in",
-        path: "#",
-        icon:{HiShoppingBag}
-    },
-    {
-        titile:"Sign up",
-        path: "#",
-        icon:{HiTable}
+        title: "Setting",
+        path: "/dasboard/setting",
+        icon: HiViewBoards
     },
 ]
-export default SidebarMenu
