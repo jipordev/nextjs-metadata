@@ -1,4 +1,3 @@
-'use client'
 import type { Metadata } from "next";
 import { Inter, Kantumruy_Pro, Khmer, Konkhmer_Sleokchher, Poppins } from "next/font/google";
 import "./globals.css";
@@ -30,7 +29,7 @@ const khmer_font = Khmer({
   weight: "400"
 })
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   icons: {
     icon: "/assets/pic.jpg",
   },
