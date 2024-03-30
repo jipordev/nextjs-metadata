@@ -22,7 +22,7 @@ const columns: TableColumn<UserType>[] = [
     },
     {
       name: 'Image',
-      selector: row => (
+      selector: (row):any => (
         <img src={row.image} className='w-[90px] h-[90px]'/>
       ),
     },
