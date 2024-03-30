@@ -55,7 +55,7 @@ const columns: TableColumn<UserType>[] = [
       }
 
       const result = getUser.filter((item:UserType) => {
-        return item.username?.toLowerCase().includes(search.toLocaleLowerCase())
+        return item.username.toLowerCase().includes(search.toLocaleLowerCase())
       })
       setFilter(result)
 
