@@ -100,13 +100,13 @@ const columns: TableColumn<UserType>[] = [
           pagination
           subHeader
           subHeaderComponent={
-            <Input
-              radius="lg"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="Type to search..."
-            />
-          }
+          <input
+            className="border-[1px] px-4 py-2 w-full rounded-md border-blue-400"
+            placeholder="Search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          ></input>
+        }
           paginationComponentOptions={paginationComponentOptions}
           data={filteredData}
           progressComponent={<LoadingComponent/>}
